@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking — Kasenyi Bay Hotel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand"><span class="mark">KB</span>Kasenyi Bay Hotel</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="booking.html" class="current">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta"><a href="booking.html" class="btn btn-copper">Book Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="section" style="padding-top:64px;">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Reserve a Room</span>
+      <h2>Check availability</h2>
+      <p>Pick your dates and room type — we'll confirm by email within a few hours.</p>
+    </div>
+
+    <div class="form-card" style="max-width:760px;">
+      <div class="form-note" id="formNote"></div>
+
+      <form id="bookingForm" novalidate>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="e.g. Sundus Ahmed" required>
+            <span class="field-error" id="err-fullName"></span>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required>
+            <span class="field-error" id="err-email"></span>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+256 7xx xxx xxx" required>
+            <span class="field-error" id="err-phone"></span>
+          </div>
+
+          <div class="field">
+            <label for="roomType">Room Type</label>
+            <select id="roomType" name="roomType" required>
+              <option value="">Select a room</option>
+              <option value="garden" data-price="180000">Garden Room — UGX 180,000/night</option>
+              <option value="bay" data-price="260000">Bay View Room — UGX 260,000/night</option>
+              <option value="suite" data-price="420000">Shoreline Suite — UGX 420,000/night</option>
+            </select>
+            <span class="field-error" id="err-roomType"></span>
+          </div>
+
+          <div class="field">
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="guests" min="1" max="8" value="1" required>
+            <span class="field-error" id="err-guests"></span>
+          </div>
+
+          <div class="field">
+            <label for="checkin">Check-in</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <span class="field-error" id="err-checkin"></span>
+          </div>
+
+          <div class="field">
+            <label for="checkout">Check-out</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <span class="field-error" id="err-checkout"></span>
+          </div>
+
+          <div class="field full">
+            <label for="requests">Special Requests (optional)</label>
+            <textarea id="requests" name="requests" placeholder="Airport pickup, dietary needs, early check-in..."></textarea>
+          </div>
+        </div>
+
+        <div class="price-summary" id="priceSummary">
+          <div>
+            <div class="label">Estimated Total</div>
+            <div class="sub" id="priceSub">Select a room and dates</div>
+          </div>
+          <div class="amount" id="priceAmount">UGX 0</div>
+        </div>
+
+        <button type="submit" class="btn btn-copper">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:14px;"><span class="mark">KB</span>Kasenyi Bay Hotel</a>
+        <p style="max-width:280px;">Kasenyi Landing Site Road, Entebbe, Uganda. Thirty-two rooms on the shore of Lake Victoria.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach Us</h4>
+        <ul>
+          <li><a href="tel:+256700123456">+256 700 123 456</a></li>
+          <li><a href="mailto:stay@kasenyibay.com">stay@kasenyibay.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Kasenyi Bay Hotel</span>
+      <span>Entebbe, Uganda</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

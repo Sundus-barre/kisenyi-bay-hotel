@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Kasenyi Bay Hotel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand"><span class="mark">KB</span>Kasenyi Bay Hotel</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html" class="current">Contact</a></li>
+      <li class="nav-cta"><a href="booking.html" class="btn btn-copper">Book Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="section" style="padding-top:64px;">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Get in Touch</span>
+      <h2>We're easy to reach</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="info-block">
+        <div class="info-item">
+          <span class="eyebrow">Address</span>
+          <p>Kasenyi Landing Site Road<br>Entebbe, Uganda</p>
+        </div>
+        <div class="info-item">
+          <span class="eyebrow">Phone</span>
+          <p><a href="tel:+256700123456">+256 700 123 456</a></p>
+        </div>
+        <div class="info-item">
+          <span class="eyebrow">Email</span>
+          <p><a href="mailto:stay@kasenyibay.com">stay@kasenyibay.com</a></p>
+        </div>
+        <div class="info-item">
+          <span class="eyebrow">Front Desk Hours</span>
+          <p>Open 24 hours, every day</p>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <div class="form-note" id="contactNote"></div>
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="cName">Name</label>
+            <input type="text" id="cName" name="cName" placeholder="Your name" required>
+            <span class="field-error" id="err-cName"></span>
+          </div>
+          <div class="field">
+            <label for="cEmail">Email</label>
+            <input type="email" id="cEmail" name="cEmail" placeholder="you@email.com" required>
+            <span class="field-error" id="err-cEmail"></span>
+          </div>
+          <div class="field">
+            <label for="cSubject">Subject</label>
+            <select id="cSubject" name="cSubject" required>
+              <option value="">Select a topic</option>
+              <option value="booking">Booking question</option>
+              <option value="event">Event / conference room</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="field-error" id="err-cSubject"></span>
+          </div>
+          <div class="field">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" name="cMessage" placeholder="How can we help?" required></textarea>
+            <span class="field-error" id="err-cMessage"></span>
+          </div>
+          <button type="submit" class="btn btn-copper">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:14px;"><span class="mark">KB</span>Kasenyi Bay Hotel</a>
+        <p style="max-width:280px;">Kasenyi Landing Site Road, Entebbe, Uganda. Thirty-two rooms on the shore of Lake Victoria.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach Us</h4>
+        <ul>
+          <li><a href="tel:+256700123456">+256 700 123 456</a></li>
+          <li><a href="mailto:stay@kasenyibay.com">stay@kasenyibay.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Kasenyi Bay Hotel</span>
+      <span>Entebbe, Uganda</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
