@@ -21,7 +21,7 @@ A 4-page responsive website for a fictional lakeside hotel on Lake Victoria, Ent
 - Scroll-triggered animations
 
 ## Live Site
-[View it here](your-github-pages-link-here)
+[View it here](https://sundus-barre.github.io/kisenyi-bay-hotel/)
 
 ## About This Project
 Built as a personal project to practice HTML, CSS, and JavaScript — my first project using real JavaScript interactivity, including form validation and DOM manipulation.
